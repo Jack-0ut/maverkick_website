@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maverkick</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="../static/styles.css">
+
+</head>
+<body>
+
+<header class="container">
+    <div class="app-name">Maverkick</div>
+</header>
+<div class="container main-content">
+    
+    <div class="scroll-section">
+        <p class="mission-statement">Our mission is to revolutionize learning through engaging and interactive short videos.</p>
+        <p class="ideology">We see any skill or knowledge as a house. And every lesson you take is like a brick. There are many different sizes of the bricks, but we are having an opinion that smaller is better. It comes from our life experience, as we're seeing how our lives are decided in momentary situations, short conversations or just a second look in the eye. But our learning nowadays doesn't look like that - we've been told that more is better and we have to go through hours of the materials, which is hard to assimilate. And that's why we go to social media, where everything is so fast,bright and funny. And that's why many of us feels depressed when we need to learn. And that's why we're creating this. That's why our goal is to  <strong> give people those bricks and teach them how to use it to build the house they want.</p>
+    </div>
+
+    <div class="scroll-section"> 
+        <h2>How do we approach that?</h2>
+        <div class="features">
+            <div class="feature">
+                <span class="material-icons">play_circle</span>
+                <h3>Learn through short videos</h3>
+                <p class="feature-description">
+                    We're conserned about concentration problems that are widespread now around the world. So we see shorter blocks as the most effective approach to fight it.
+                </p>
+            </div>
+            <div class="feature">
+                <span class="material-icons">quiz</span>
+                <h3>Practice and ask</h3>
+                <p class="feature-description">
+                    Those are two the most important things during education. You want to check your knowledge and ask questions about things you don't understand.
+                </p>
+            </div>
+            <div class="feature">
+                <span class="material-icons">self_improvement</span>
+                <h3>Keep it healthy</h3>
+                <p class="feature-description">
+                    Learning isn't just about content and time spent, but about keeping the mind clear and focused. So, we help you to achieve that using our recommendations.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-section">
+        <div class="citations-section">
+            <h2>Why did we start it ?</h2>
+            <div class="citations">
+                <blockquote class="citation">
+                    <p>"I got extremly painful experience of learning at the university, when you're getting tons of information and you're trying to remember it, but really you can't.That's when I understand that we need to change something."</p>
+                    <footer>— Eugene Solovei</footer>
+                </blockquote>
+                <blockquote class="citation">
+                    <p>"We believe that the future of education lies in short, engaging content that can be easily consumed by learners of all ages."</p>
+                    <footer>— Creator 2</footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-section">
+        <div class="waitlist-container">
+            <h2>Join the Waitlist, be the first!</h2>
+            <form id="waitlist-form" class="waitlist-form" action="/join" method="post">
+                <input type="email" name="email" placeholder="Email" required>
+                <button type="submit">Join Waitlist</button>
+            </form>
+        </div>
+        <div class="feedback-container">
+            <h2>And share your thoughts about education to help us improve your experience</h2>
+            <p>What do you like or dislike the most about current education?</p>
+            <form id="feedback-form" class="feedback-form" action="/feedback" method="post">
+                <div class="input-group">
+                    <textarea name="feedback" class="feedback-textarea" rows="8" cols="40" placeholder="Open up your mind and share, it's important"></textarea>
+                    <button type="submit" class="feedback-submit">Submit</button>
+                </div>
+            </form>
+        </div>        
+    </div>
+</div>
+</body>
+</html>

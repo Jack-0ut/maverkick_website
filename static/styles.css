@@ -1,0 +1,420 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 95%,
+      rgba(255, 255, 255, 0.1) 95%,
+      rgba(255, 255, 255, 0.1) 100%
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 95%,
+      rgba(255, 255, 255, 0.1) 95%,
+      rgba(255, 255, 255, 0.1) 100%
+    ),
+    linear-gradient(to right, #7b4397, #dc2430);
+  background-size: 300px 200px;
+  background-position: 0 0, 0 0, 0 0;
+  animation: bricks-animation 8s infinite linear;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.app-name {
+    font-size: 2rem;
+    color: white;
+}
+
+.menu {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #999;
+}
+
+.mission-statement {
+    font-family: 'Georgia', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: -20px;
+    text-align: center;
+}
+
+.ideology {
+    font-size: 1.1rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem; /* Increased margin-bottom */
+    line-height: 1.6;
+    color: #fff;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.main-content {
+    color: white;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.feature {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 40px;
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: #7b4397;
+    margin-bottom: 0.5rem;
+}
+
+.feature h3 {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #7b4397;
+}
+
+.feature-description {
+    margin-top: 5px;
+    font-size: 1em;
+    color: #7b4397;
+}
+
+.waitlist-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.waitlist-form input {
+    flex-grow: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+}
+
+.waitlist-form button {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #6c63ff;
+    color: #7b4397;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.waitlist-form button:hover {
+    background-color: #594cec;
+}
+
+.main-content button {
+    background-color: #ffffff;
+    color: #7b4397;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.main-content button:hover {
+    background-color: #eee;
+}
+
+.material-icons {
+    font-size: 48px;
+    color: #7b4397;
+}
+
+.citations-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.citations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.citation {
+    width: 300px;
+    padding: 1.5rem;
+    border: 1px solid rgba(128, 0, 128, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.citation p {
+    font-style: italic;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.citation footer {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.scroll-container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.scroll-section {
+    scroll-snap-align: start;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    border: 1px solid rgba(123, 67, 151, 0.5); 
+    margin: 2rem 0;
+}
+  .feedback-textarea {
+    width: 100%;
+    max-width: 800px;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    margin-bottom: 1rem;
+    background-color: rgba(123, 67, 151, 0.5);
+    border: 1px solid rgb(0, 0, 0,0.5);
+    color: #ffffff;
+  }
+  .feedback-textarea::placeholder {
+    color: #ccc;
+    opacity: 1;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .feedback-submit {
+    background-color: #7b4397;
+    color: white;
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; 
+  }
+  
+  .feedback-submit:hover {
+    background-color: #dc2430;
+    transform: scale(1.05); 
+  }
+  .separator-line {
+    width: 100%;
+    max-width: 600px;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 1rem auto;
+  }
+  
+
+@media (max-width: 768px) {
+    header {
+        position: static;
+        padding: 0.5rem 0;
+    }
+
+    .app-name {
+        font-size: 24px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .container {
+        padding: 2rem 0;
+    }
+    
+    .mission-statement {
+        margin-top: 0;
+        font-size: 1.2em;
+    }
+
+    .ideology {
+        max-width: 95%;
+        font-size: 1em;
+    }
+    
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 90%;
+        margin: 20px;
+    }
+
+    .waitlist-form {
+        max-width: 95%;
+    }
+
+    .citation {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    header {
+        position: static;
+        padding: 0.5rem 0;
+    }
+
+    .app-name {
+        font-size: 18px;
+        padding-left: 1.5rem; /* Adjust left padding */
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .container {
+        padding: 1.5rem 0;
+    }
+    
+    .mission-statement {
+        margin-top: 0;
+        font-size: 1em;
+    }
+
+    .ideology {
+        max-width: 95%;
+        font-size: 0.9em;
+        margin-bottom: 3rem;
+    }
+    
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 90%;
+        margin: 20px;
+    }
+
+
+    .waitlist-form button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    .waitlist-container h2 {
+        font-size: 1rem; 
+        text-align: center; 
+    }
+    .waitlist-form input {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .citation {
+        width: 100%;
+    }
+}
+
+@keyframes bricks-animation {
+    0% {
+      background-position: 0 0, 0 0;
+    }
+    100% {
+      background-position: 50px 50px, 50px 50px;
+    }
+  }
+  
